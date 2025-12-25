@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import { View, Text, TextInput } from "react-native";
 import Button from "../../src/components/ui/Button";
 import { useAuthStore } from "../../src/store/auth.store";
@@ -7,6 +8,8 @@ export default function Otp() {
 
   const handleVerify = () => {
     login({ name: "Somnath" }, "dummy-token");
+    // 🔑 FORCE navigation after auth
+    router.replace("/(tabs)/home");
   };
 
   return (
