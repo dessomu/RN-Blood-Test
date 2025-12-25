@@ -12,6 +12,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "scheme": "bloodtest",
+    "experiments": {
+      "typedRoutes": false
+    },
     "ios": {
       "supportsTablet": true
     },
@@ -24,6 +28,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": ["expo-router"]
   }
 }
